@@ -12,9 +12,19 @@
 		451FA97421D7B660009AA4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451FA97221D7B660009AA4ED /* Main.storyboard */; };
 		451FA97621D7B662009AA4ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451FA97521D7B662009AA4ED /* Assets.xcassets */; };
 		451FA97921D7B662009AA4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451FA97721D7B662009AA4ED /* LaunchScreen.storyboard */; };
+		451FA98121D7BBB4009AA4ED /* HomeSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA98021D7BBB4009AA4ED /* HomeSliderTableViewCell.swift */; };
+		451FA98521D7C6E2009AA4ED /* SlidingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA98421D7C6E2009AA4ED /* SlidingContentView.swift */; };
+		451FA98721D7C70A009AA4ED /* SlidingContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451FA98621D7C70A009AA4ED /* SlidingContentView.xib */; };
+		451FA98C21D7CA61009AA4ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA98B21D7CA61009AA4ED /* Constants.swift */; };
+		451FA98F21D7CF00009AA4ED /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA98E21D7CF00009AA4ED /* DataModel.swift */; };
+		451FA99221D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA99121D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift */; };
+		451FA99521D80F38009AA4ED /* MetroDealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA99421D80F38009AA4ED /* MetroDealsTableViewCell.swift */; };
+		451FA99721D80F51009AA4ED /* MetroDealsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA99621D80F51009AA4ED /* MetroDealsCollectionViewCell.swift */; };
+		CE04DC8B4D9345452C63934A /* Pods_BlueEx_Task_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73022E82F4863218EE811F7A /* Pods_BlueEx_Task_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C950378323EEBFC90C6BE6B /* Pods-BlueEx Task App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueEx Task App.debug.xcconfig"; path = "Target Support Files/Pods-BlueEx Task App/Pods-BlueEx Task App.debug.xcconfig"; sourceTree = "<group>"; };
 		451FA96B21D7B660009AA4ED /* BlueEx Task App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlueEx Task App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		451FA96E21D7B660009AA4ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		451FA97021D7B660009AA4ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,16 @@
 		451FA97521D7B662009AA4ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451FA97821D7B662009AA4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451FA97A21D7B662009AA4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451FA98021D7BBB4009AA4ED /* HomeSliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSliderTableViewCell.swift; sourceTree = "<group>"; };
+		451FA98421D7C6E2009AA4ED /* SlidingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingContentView.swift; sourceTree = "<group>"; };
+		451FA98621D7C70A009AA4ED /* SlidingContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlidingContentView.xib; sourceTree = "<group>"; };
+		451FA98B21D7CA61009AA4ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		451FA98E21D7CF00009AA4ED /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		451FA99121D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		451FA99421D80F38009AA4ED /* MetroDealsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroDealsTableViewCell.swift; sourceTree = "<group>"; };
+		451FA99621D80F51009AA4ED /* MetroDealsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroDealsCollectionViewCell.swift; sourceTree = "<group>"; };
+		73022E82F4863218EE811F7A /* Pods_BlueEx_Task_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueEx_Task_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F43F6574352EE8A269CD65 /* Pods-BlueEx Task App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueEx Task App.release.xcconfig"; path = "Target Support Files/Pods-BlueEx Task App/Pods-BlueEx Task App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE04DC8B4D9345452C63934A /* Pods_BlueEx_Task_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,8 @@
 			children = (
 				451FA96D21D7B660009AA4ED /* BlueEx Task App */,
 				451FA96C21D7B660009AA4ED /* Products */,
+				8FBC94091F4A2A8EA19E6E29 /* Pods */,
+				CC958C372C43EFA8C89D7025 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +78,86 @@
 			isa = PBXGroup;
 			children = (
 				451FA96E21D7B660009AA4ED /* AppDelegate.swift */,
-				451FA97021D7B660009AA4ED /* ViewController.swift */,
-				451FA97221D7B660009AA4ED /* Main.storyboard */,
+				451FA98921D7C878009AA4ED /* CONTROLLER */,
+				451FA98821D7C86D009AA4ED /* VIEW */,
+				451FA98D21D7CA67009AA4ED /* MODEL */,
+				451FA98A21D7C89A009AA4ED /* HEADER CELL */,
+				451FA99021D7EFCD009AA4ED /* SPECIAL CATEGORY CELL */,
+				451FA99321D80F18009AA4ED /* METRO DEAL CELL */,
 				451FA97521D7B662009AA4ED /* Assets.xcassets */,
 				451FA97721D7B662009AA4ED /* LaunchScreen.storyboard */,
 				451FA97A21D7B662009AA4ED /* Info.plist */,
 			);
 			path = "BlueEx Task App";
+			sourceTree = "<group>";
+		};
+		451FA98821D7C86D009AA4ED /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+				451FA97221D7B660009AA4ED /* Main.storyboard */,
+			);
+			path = VIEW;
+			sourceTree = "<group>";
+		};
+		451FA98921D7C878009AA4ED /* CONTROLLER */ = {
+			isa = PBXGroup;
+			children = (
+				451FA97021D7B660009AA4ED /* ViewController.swift */,
+			);
+			path = CONTROLLER;
+			sourceTree = "<group>";
+		};
+		451FA98A21D7C89A009AA4ED /* HEADER CELL */ = {
+			isa = PBXGroup;
+			children = (
+				451FA98021D7BBB4009AA4ED /* HomeSliderTableViewCell.swift */,
+				451FA98621D7C70A009AA4ED /* SlidingContentView.xib */,
+				451FA98421D7C6E2009AA4ED /* SlidingContentView.swift */,
+			);
+			path = "HEADER CELL";
+			sourceTree = "<group>";
+		};
+		451FA98D21D7CA67009AA4ED /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				451FA98B21D7CA61009AA4ED /* Constants.swift */,
+				451FA98E21D7CF00009AA4ED /* DataModel.swift */,
+			);
+			path = MODEL;
+			sourceTree = "<group>";
+		};
+		451FA99021D7EFCD009AA4ED /* SPECIAL CATEGORY CELL */ = {
+			isa = PBXGroup;
+			children = (
+				451FA99121D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift */,
+			);
+			path = "SPECIAL CATEGORY CELL";
+			sourceTree = "<group>";
+		};
+		451FA99321D80F18009AA4ED /* METRO DEAL CELL */ = {
+			isa = PBXGroup;
+			children = (
+				451FA99621D80F51009AA4ED /* MetroDealsCollectionViewCell.swift */,
+				451FA99421D80F38009AA4ED /* MetroDealsTableViewCell.swift */,
+			);
+			path = "METRO DEAL CELL";
+			sourceTree = "<group>";
+		};
+		8FBC94091F4A2A8EA19E6E29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C950378323EEBFC90C6BE6B /* Pods-BlueEx Task App.debug.xcconfig */,
+				F6F43F6574352EE8A269CD65 /* Pods-BlueEx Task App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC958C372C43EFA8C89D7025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73022E82F4863218EE811F7A /* Pods_BlueEx_Task_App.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 451FA97D21D7B662009AA4ED /* Build configuration list for PBXNativeTarget "BlueEx Task App" */;
 			buildPhases = (
+				B77E8F0EFD9DA025ED8F54A0 /* [CP] Check Pods Manifest.lock */,
 				451FA96721D7B660009AA4ED /* Sources */,
 				451FA96821D7B660009AA4ED /* Frameworks */,
 				451FA96921D7B660009AA4ED /* Resources */,
+				8E91F965F8C3162F3923C0E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +223,77 @@
 				451FA97921D7B662009AA4ED /* LaunchScreen.storyboard in Resources */,
 				451FA97621D7B662009AA4ED /* Assets.xcassets in Resources */,
 				451FA97421D7B660009AA4ED /* Main.storyboard in Resources */,
+				451FA98721D7C70A009AA4ED /* SlidingContentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E91F965F8C3162F3923C0E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlueEx Task App/Pods-BlueEx Task App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlueEx Task App/Pods-BlueEx Task App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B77E8F0EFD9DA025ED8F54A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlueEx Task App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		451FA96721D7B660009AA4ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451FA98F21D7CF00009AA4ED /* DataModel.swift in Sources */,
+				451FA98521D7C6E2009AA4ED /* SlidingContentView.swift in Sources */,
+				451FA99521D80F38009AA4ED /* MetroDealsTableViewCell.swift in Sources */,
 				451FA97121D7B660009AA4ED /* ViewController.swift in Sources */,
+				451FA99721D80F51009AA4ED /* MetroDealsCollectionViewCell.swift in Sources */,
+				451FA99221D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift in Sources */,
+				451FA98121D7BBB4009AA4ED /* HomeSliderTableViewCell.swift in Sources */,
 				451FA96F21D7B660009AA4ED /* AppDelegate.swift in Sources */,
+				451FA98C21D7CA61009AA4ED /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +437,7 @@
 		};
 		451FA97E21D7B662009AA4ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C950378323EEBFC90C6BE6B /* Pods-BlueEx Task App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +455,7 @@
 		};
 		451FA97F21D7B662009AA4ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F43F6574352EE8A269CD65 /* Pods-BlueEx Task App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
