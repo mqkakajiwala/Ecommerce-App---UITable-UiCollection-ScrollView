@@ -129,23 +129,21 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func configureTableView() {
         self.homeTableView.rowHeight = UITableView.automaticDimension
-        self.homeTableView.estimatedRowHeight = 190
+        self.homeTableView.estimatedRowHeight = homeTableView.rowHeight
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.row {
-        case 0:
-            return 150
-        case 1:
-            return 100
-        default:
-            return 220
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            switch indexPath.row {
+            case 2:
+                return tableView.rowHeight + 100
+            default:
+                return tableView.rowHeight
+            }
         }
-    }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == 1 {
@@ -158,11 +156,11 @@ extension ViewController: UITableViewDelegate {
         } else if indexPath.row == 2 {
             if let cell = cell as? MetroDealsTableViewCell {
                 cell.metroDealsCollectionView.dataSource = self
-//                cell.metroDealsCollectionView.delegate = self
+                //                cell.metroDealsCollectionView.delegate = self
                 cell.metroDealsCollectionView.reloadData()
             }
         }
-      
+        
     }
 }
 
@@ -172,7 +170,7 @@ extension ViewController: UICollectionViewDataSource {
         if collectionView == collectionView.viewWithTag(2) {
             return articleCarouselModelArray.count
         }else {
-            return 4
+            return specialCategoriesModelArray.count
         }
         
     }
@@ -190,10 +188,8 @@ extension ViewController: UICollectionViewDataSource {
         }
         else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "specialCategoryCell", for: indexPath) as! SpecialCategoriesCollectionViewCell
-            if specialCategoriesModelArray.count > 0 {
-                cell.categoryButton.setImage(Constants.Helper.getImageFromURL(specialCategoriesModelArray[indexPath.row].imageUrl!), for: .normal)
+            cell.categoryButton.setImage(Constants.Helper.getImageFromURL(specialCategoriesModelArray[indexPath.row].imageUrl!), for: .normal)
             cell.categoryLabel.text = specialCategoriesModelArray[indexPath.row].titleText
-            }
             return cell
         }
     }
