@@ -20,6 +20,7 @@
 		451FA99221D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA99121D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift */; };
 		451FA99521D80F38009AA4ED /* MetroDealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA99421D80F38009AA4ED /* MetroDealsTableViewCell.swift */; };
 		451FA99721D80F51009AA4ED /* MetroDealsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FA99621D80F51009AA4ED /* MetroDealsCollectionViewCell.swift */; };
+		451FBC2A21DB549E0073919A /* SpecialCategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451FBC2921DB549E0073919A /* SpecialCategoriesCollectionViewCell.swift */; };
 		CE04DC8B4D9345452C63934A /* Pods_BlueEx_Task_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73022E82F4863218EE811F7A /* Pods_BlueEx_Task_App.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		451FA99121D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCategoriesTableViewCell.swift; sourceTree = "<group>"; };
 		451FA99421D80F38009AA4ED /* MetroDealsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroDealsTableViewCell.swift; sourceTree = "<group>"; };
 		451FA99621D80F51009AA4ED /* MetroDealsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroDealsCollectionViewCell.swift; sourceTree = "<group>"; };
+		451FBC2921DB549E0073919A /* SpecialCategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		73022E82F4863218EE811F7A /* Pods_BlueEx_Task_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueEx_Task_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F43F6574352EE8A269CD65 /* Pods-BlueEx Task App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueEx Task App.release.xcconfig"; path = "Target Support Files/Pods-BlueEx Task App/Pods-BlueEx Task App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				451FA99121D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift */,
+				451FBC2921DB549E0073919A /* SpecialCategoriesCollectionViewCell.swift */,
 			);
 			path = "SPECIAL CATEGORY CELL";
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				451FA98521D7C6E2009AA4ED /* SlidingContentView.swift in Sources */,
 				451FA99521D80F38009AA4ED /* MetroDealsTableViewCell.swift in Sources */,
 				451FA97121D7B660009AA4ED /* ViewController.swift in Sources */,
+				451FBC2A21DB549E0073919A /* SpecialCategoriesCollectionViewCell.swift in Sources */,
 				451FA99721D80F51009AA4ED /* MetroDealsCollectionViewCell.swift in Sources */,
 				451FA99221D7EFF5009AA4ED /* SpecialCategoriesTableViewCell.swift in Sources */,
 				451FA98121D7BBB4009AA4ED /* HomeSliderTableViewCell.swift in Sources */,

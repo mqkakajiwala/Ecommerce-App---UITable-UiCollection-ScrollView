@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     var specialCategoriesModelArray = [DataModel.Special_Categories]()
     var articleCarouselModelArray = [DataModel.Artistic_Carousel]()
     
+    
     //MARK: - Declare properties here ..
     @IBOutlet weak var homeTableView: UITableView! {
         didSet {
@@ -140,43 +141,85 @@ extension ViewController: UITableViewDelegate {
         case 0:
             return 150
         case 1:
-            return 144
+            return 100
         default:
-            return 250
+            return 220
         }
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == 2 {
+        if indexPath.row == 1 {
+            if let cell = cell as? SpecialCategoriesTableViewCell {
+                cell.specialCategoryCollectionView.isScrollEnabled = false
+                cell.specialCategoryCollectionView.dataSource = self
+                cell.specialCategoryCollectionView.delegate = self
+                cell.specialCategoryCollectionView.reloadData()
+            }
+        } else if indexPath.row == 2 {
             if let cell = cell as? MetroDealsTableViewCell {
                 cell.metroDealsCollectionView.dataSource = self
-                cell.metroDealsCollectionView.delegate = self
+//                cell.metroDealsCollectionView.delegate = self
                 cell.metroDealsCollectionView.reloadData()
             }
         }
+      
     }
 }
 
 //MARK: - CollectionView datasource methods ..
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return articleCarouselModelArray.count
+        if collectionView == collectionView.viewWithTag(2) {
+            return articleCarouselModelArray.count
+        }else {
+            return 4
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "metroDealsCollectionCell", for: indexPath) as! MetroDealsCollectionViewCell
-        
-        cell.productImageView.image = articleCarouselModelArray[indexPath.row].avatarImage
-        cell.productName.text = articleCarouselModelArray[indexPath.row].productName
-        cell.actualPrice.text = articleCarouselModelArray[indexPath.row].actualPrice
-        cell.discountPrice.text = articleCarouselModelArray[indexPath.row].discountPrice
-        
-        return cell
+        if collectionView == collectionView.viewWithTag(2) {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "metroDealsCollectionCell", for: indexPath) as! MetroDealsCollectionViewCell
+            
+            cell.productImageView.image = articleCarouselModelArray[indexPath.row].avatarImage
+            cell.productName.text = articleCarouselModelArray[indexPath.row].productName
+            cell.actualPrice.text = articleCarouselModelArray[indexPath.row].actualPrice
+            cell.discountPrice.text = articleCarouselModelArray[indexPath.row].discountPrice
+            
+            return cell
+        }
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "specialCategoryCell", for: indexPath) as! SpecialCategoriesCollectionViewCell
+            if specialCategoriesModelArray.count > 0 {
+                cell.categoryButton.setImage(Constants.Helper.getImageFromURL(specialCategoriesModelArray[indexPath.row].imageUrl!), for: .normal)
+            cell.categoryLabel.text = specialCategoriesModelArray[indexPath.row].titleText
+            }
+            return cell
+        }
     }
 }
 
+
 //MARK: - CollectionView delegate methods ..
-extension ViewController: UICollectionViewDelegate {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if collectionView == collectionView.viewWithTag(1) {
+            
+            let layout = collectionViewLayout as! UICollectionViewFlowLayout
+            layout.minimumLineSpacing = 5.0
+            
+            let numberOfItemsPerRow: CGFloat = 4.0
+            let itemWidth = (collectionView.bounds.width - layout.minimumLineSpacing) / numberOfItemsPerRow
+            
+            return CGSize(width: itemWidth, height: itemWidth)
+        }else {
+            return CGSize()
+        }
+        
+        
+    }
     
 }
 
